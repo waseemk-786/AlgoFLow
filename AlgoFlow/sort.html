@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo Flow</title>
+    <link rel="icon" href="../img/logo.png" />
+    <style>
+          body {
+            background-color: aqua !important;
+        }
+        
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    
+    </style>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/sorting.css">
+
+</head>
+
+<body>
+    
+    <nav class="content">
+        <div class="mobile-logo">
+            <br />
+            <h1>
+                <a href="index.html">Algo<span>Flow</span></a>
+            </h1>
+        </div>
+        <ul class="logo">
+            <li>
+                <a href="index.html"><button id="clear">HOME</button></a>
+            </li>
+
+            <li>
+                <a>
+                    <select name="algo" id="algo" onchange="algoSelected()">
+                        <option value="" disabled selected>CHOOSE ALGORITHM</option>
+                        <option value="selection">SELECTION SORT</option>
+                        <option value="bubble">BUBBLE SORT</option>
+                        <option value="insertion">INSERTION SORT</option>
+                        <option value="merge">MERGE SORT</option>
+                        <option value="quick">QUICK SORT</option>
+                    </select>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <span>Size</span>
+                    <input id="arr_size" type="range" min="15" max="40" step="1" value="20">
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <span>Speed</span>
+                    <input id="arr_speed" type="range" min="1" max="10" step="1" value="8">
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <button id="arr_generate">Reset Array!</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    
+
+    <center>
+        <h1 class="container heading">Sorting Algorithms !</h1> <br>  <button class="success btn-lg btn-shadow" id="search" onclick="sort()" style="background-color: white; color: black;">
+        Sort
+      </button>
+    </center>
+    <section>
+
+        <div id="Info_Cont1">
+            <p></p>
+        </div>
+
+        <div id="array_container"></div>
+
+        <div id="Info_Cont2">
+            <p></p>
+        </div>
+
+    </section>
+
+    <script src="../js/sorting/main.js"></script>
+    <script src="../js/sorting/visualization.js"></script>
+    <script src="../js/sorting/bubble.js"></script>
+    <script src="../js/sorting/selection.js"></script>
+    <script src="../js/sorting/insertion.js"></script>
+    <script src="../js/sorting/quick.js"></script>
+    <script src="../js/sorting/merge.js"></script>
+  
+</body>
+
+</html>

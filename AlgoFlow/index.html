@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png" />
+    <title>Algo Flow</title>
+    <style>
+        body {
+          background-color: aqua;
+        }
+        p a {
+            font-size: 20px;
+            color: Red;
+        }
+        .card {
+      background-color: white;
+      /* Add other styles for the card here if needed */
+    }
+      </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class='logo'><a href='index.html'>Algo<span>Flow </span></a></div>
+
+        <label for='btn' class='icon'>
+            <span class='fa fa-bars'></span>
+        </label>
+        <input type='checkbox' id='btn' style="display: none;">
+        <ul>
+            <li><a href='searching.html'>Searching</a></li>
+            
+           
+            
+
+            <li><a href='sort.html'>Sorting</a></li>
+            <li><a href='pathfinding.html'>Pathfinding</a></li>
+            <li><a href='contact.html'>Contact Me</a></li>
+           
+        </ul>
+    </nav>
+    <br>
+    <h1 class="container"><i class="fas fa-bug"></i> Explore Algorithms !</h1>
+
+    <br>
+    <div class="card-deck">
+
+        <script>
+
+            let cards = [
+            {
+                title: "Searching Algorithms",
+                link: "searching.html",
+                image: "./img/avl.gif",
+                alt: "Searching image"
+            },{
+                title: "Sorting Algorithms",
+                link: "sort.html",
+                image: "./img/sort2.gif",
+                alt: "Sorting image"
+            }, {
+                title: "Pathfinding Algorithms",
+                link: "pathfinding.html",
+                image: "./img/pathfinding.gif",
+                alt: "Pathfinding image",
+                
+            }]
+            
+
+            for (i = 0; i < cards.length; i++) {
+                card = cards[i]
+                card_template = `
+                     <div class="card">
+                        <a href=${card.link}><img class="card-image" src=${card.image} alt=${card.alt}></a>
+                        <div class="container">
+                            <div class="card-title">
+                                <h2>${card.title}</h2>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn-danger"><a href=${card.link}>Explore</a></button>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                `
+                document.querySelector(".card-deck").innerHTML += card_template;
+            };
+        </script>
+
+    </div>
+    <br>
+    <br>
+    <center>
+        <p style="font-size: 20px;">Developed by <a href="https://www.linkedin.com/in/waseem-k-821b06227/" target="_blank">Waseem</a></p>
+
+    </center>
+</body>
+
+</html>

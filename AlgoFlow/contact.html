@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png" />
+    <title>Algo Flow</title> <style>
+        /* Your existing CSS styles... */
+        body {
+          background-color: aqua;
+        }
+        p a {
+            font-size: 20px;
+            color: Red;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-heading h6 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1b1b1b;
+        }
+
+        .section-heading h4 {
+            font-size: 24px;
+            color: #1b1b1b;
+            margin-top: 10px;
+        }
+
+        .contact-form fieldset {
+            border: none;
+        }
+
+        .contact-form input[type="name"],
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #1b1b1b;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class='logo'><a href='index.html'>Algo<span>Flow </span></a></div>
+
+        <label for='btn' class='icon'>
+            <span class='fa fa-bars'></span>
+        </label>
+        <input type='checkbox' id='btn' style="display: none;">
+        <ul>
+            <li><a href='searching.html'>Searching</a></li>
+            
+           
+            
+
+            <li><a href='sort.html'>Sorting</a></li>
+            <li><a href='pathfinding.html'>Pathfinding</a></li>
+            <li><a href='contact.html'>Contact Me</a></li>
+           
+        </ul>
+    </nav>
+    <br>
+    <h1 class="container"><i class="fas fa-bug"></i> Feel Free to Message !</h1>
+
+    <br>
+    <div class="col-lg-4">
+        <form class="contact-form" id="contact" action="pp.php" method="post">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h6>Contact us</h6>
+                        <h4>Say <em style="color: aqua;">Hello !</em></h4> <!-- Updated style here -->
+                  
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                    </fieldset>
+                </div>
+                <div class="col-lg-12">
+                    <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+                    </fieldset>
+                </div>
+                <div class="col-lg-12">
+                    <fieldset>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    </fieldset>
+                </div>
+                <div class="col-lg-12">
+                    <fieldset>
+                        <button type="submit" id="form-submit">Send Message</button>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    
+    <center>
+        <p style="font-size: 20px;">Developed by <a href="https://www.linkedin.com/in/waseem-k-821b06227/" target="_blank">Waseem</a></p>
+
+    </center>
+</body>
+
+</html>
